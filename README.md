@@ -5,7 +5,7 @@
 2020-03-06
 
 ## About
-Part of the Data Scientist nanodegree at Udacity.
+Part of the Data Scientist nanodegree at Udacity (self-chosen and non-mandatory project)
 
 ## Files
 **Generalplot.py** - Generic plotting class for visualizing data
@@ -23,10 +23,11 @@ Part of the Data Scientist nanodegree at Udacity.
 pip install baseplots
 
 ## Example Jupyter Notebook
+
+```python
 from baseplots import Plot1d, Plot2d
 
 x = Plot1d(df, 'column_name') # initialize 1d plot object
-
 y = Plot2d(df, variable_list) # initialize 2d plot object
 
 x.histplot()    # visualize numerical variable 'column_name'
@@ -36,3 +37,4 @@ x.barplot()     # visualize numeri variable 'column_name'
 y.scatterplot() # visualize two numerical variables in variable_list
 
 y.boxplot()     # visualize categorical + numerical variable in variable_list
+```
