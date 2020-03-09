@@ -1,4 +1,4 @@
-# standardized python visualizations package 'baseplots'
+# Standardized python visualizations package 'baseplots'
 ## by Truls Møller
 
 ### Date created
@@ -16,8 +16,20 @@ Part of the Data Scientist nanodegree at Udacity.
 
 **test.py** - Unit tests
 
-**test_data.csv** - Test data for unit tests 
+**test_data.csv** - Test data for unit tests
 
 ## Installation
 
 pip install baseplots
+
+## Example Jupyter Notebook
+from baseplots import Plot1d, Plot2d
+
+x = Plot1d(df, 'column_name') # initialize 1d plot object
+y = Plot2d(df, variable_list) # initialize 2d plot object
+
+x.histplot()    # visualize numerical variable 'column_name'
+x.barplot()     # visualize numeri variable 'column_name'
+
+y.scatterplot() # visualize two numerical variables in variable_list
+y.boxplot()     # visualize categorical + numerical variable in variable_list
